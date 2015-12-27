@@ -1,10 +1,29 @@
 <!doctype html>
 <html>
 	<head>
+		<script type='text/javascript' src='lib/react-0.14.3/build/react.js'></script>
+		<script type='text/javascript' src='lib/react-0.14.3/build/react-dom.js'></script>
 	</head>
 	<body>
 		<div id='example'></div>
 		<div id='content'></div>
-		<script type='text/javascript' src='build.js'></script>
+		<script type='text/javascript'>
+			var dojoConfig = {
+			    // baseUrl: "/js/",
+			    // tlmSiblingOfDojo: false,
+			    packages: [
+			        // { name: "dojo", location: "lib/dojo" },
+			        // { name: "dijit", location: "lib/dijit" },
+			        // { name: "dojox", location: "lib/dojox" },
+			        { name: "react", location: "../../build/react" }
+			    ]
+			};
+		</script>
+		<script type='text/javascript' src='node_modules/dojo/dojo.js'></script>
+		<script type='text/javascript'>
+			require(['react/comment-box'], function(commentBox) {
+				console.log(commentBox);
+			});
+		</script>
 	</body>
 </html>
