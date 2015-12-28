@@ -1,6 +1,6 @@
 // var CommentBox = require('./components/react/my-component');
-var React = require('react');
-var ReactDOM = require('react-dom');
+// var React = require('react');
+// var ReactDOM = require('react-dom');
 
 
 // // console.log(CommentBox);

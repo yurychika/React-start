@@ -1,7 +1,7 @@
 // var React = require('react');
 // var ReactDOM = require('react-dom');
 
-define('CommentBox', [], function(react, reactDom) {
+define([], function(react, reactDom) {
 	var CommentBox = React.createClass({
 	  render: function() {
 	    return (
